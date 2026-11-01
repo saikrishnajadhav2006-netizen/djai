@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Frontend
+node_modules/
+dist/
+.vite/
+
+# Local data and generated media
+data/
+storage/
+generated/
+*.sqlite3
+*.db
