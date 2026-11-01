@@ -17,7 +17,7 @@ This document separates required integrations from optional integrations. The ap
 ## Optional model integrations
 
 ### LLM for story, script and prompts
-- Candidate: Gemini Developer API via Google AI Studio.
+- Candidate: Gemini Developer API via Google AI Studio (free access is limited to eligible models and quotas).
 - Candidate: OpenAI API.
 - Local alternative: Ollama with a small instruction model, subject to laptop speed and memory.
 - Important: ChatGPT subscription access does not automatically include OpenAI API credits. API billing/entitlements are separate.
@@ -34,7 +34,7 @@ This document separates required integrations from optional integrations. The ap
 
 ### Video generation
 - Google Flow is a browser-based product; do not assume it exposes a supported public API for automating its workspace.
-- Google documents video generation through its Gemini API. Current documentation describes Gemini Omni Flash for video generation; model availability, quotas and pricing must be checked at integration time.
+- Google's current Gemini API video guide documents Gemini Omni Flash (`gemini-omni-1.1-flash`) for video generation and conversational editing. The Veo 3.1 Preview Gemini API model IDs were shut down on October 22, 2026. Do not code against the retired preview IDs. Check current model access, pricing, quotas and region eligibility before enabling this adapter.
 - Hosted high-quality video generation must be treated as quota-limited or paid unless the provider explicitly documents otherwise.
 - Open-weight video models can be evaluated for local/self-hosted use, but GPU requirements make them unsuitable as a guaranteed free local path on a 16 GB RAM laptop.
 - Browser automation is a fragile optional adapter, not the core architecture. It must respect provider terms and account security.
